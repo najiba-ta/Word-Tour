@@ -8,13 +8,15 @@ const Countries = ({countriesPromise}) => {
         console.log('handle visited country clicked', country.name.common);
     }
 
+
+// consrtyy
     const countriesData = use (countriesPromise);
     const countries = countriesData.countries;
     console.log(countries);
     return (
         <div>
             <h2>In the countries:{countries.length}</h2>
-            <h3>Total country visited :{handleVisitedCountries} </h3>
+            <h3>Total country visited :{} </h3>
             <div className='countries'>
                 {
                 countries.map(country => <Country key={country.cca3.cca3} 
